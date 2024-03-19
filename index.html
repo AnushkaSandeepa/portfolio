@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka Sandeepa | Portfolio</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- header logo -->
+    <link rel="icon" type="image/png" href="./images/logo.png">
+
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:image" content="./images/logo.png">
+
+
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Anushka Sandeepa</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I am a first-class honors graduate from NSBM Green University Sri Lanka, holding a BSc. Eng (Hons) in Computer Systems Engineering. Currently, I am pursuing a Master of Data Science at the esteemed University of Western Australia, deepening my expertise in this dynamic field. My professional journey includes valuable experience at Amerck Inc., a renowned US-based software company, where I honed my skills and contributed to innovative projects.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/anushka.sandeepa.75" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/anushka_sandeepa7/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/dmasandeepa/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://gitlab.com/dmasandeepa98" target="_blank"><i class='bx bxl-gitlab'></i></a>
+            </div>
+            <a href="./files/Anushka Sandeepa CV.pdf" target="_blank" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Software Engineer!</h3>
+            <p>I am deeply passionate about modern software development, particularly in the realms of React.js and Node.js. With expertise in utilizing React Redux and Redux Thunk, I have successfully contributed to several overseas projects spanning across Australia, Canada, and Germany. My enthusiasm for cutting-edge software and web development is matched only by my proficiency in deployment processes, particularly with Ubuntu servers. I am committed to delivering innovative solutions and driving technological advancements in the field.</p>
+            <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading"><span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p id="web-description">Passionate about JavaScript, especially React.js and Node.js, I bring a dynamic approach to web and software development. With a project management style rooted in Agile methodology, I strive to deliver top-notch services that exceed client expectations. Let's collaborate to turn your ideas into exceptional digital solutions.</p>
+                <a id="web-read-more-btn" class="btn" onclick="toggleDescription('web-description', 'web-read-more-btn')">Read More</a>
+            </div>
+            
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Designing</h3>
+                <p id="graphic-description">Elevate your digital presence with captivating graphic designs tailored for web development essentials. From striking website elements to eye-catching social media posts, I craft designs that engage and inspire. Additionally, I specialize in creating impactful posters for digital marketing campaigns on platforms like Facebook, Instagram, and LinkedIn. Let's collaborate to visually transform your brand and message.</p>
+                <a id="graphic-read-more-btn" class="btn" onclick="toggleDescription('graphic-description', 'graphic-read-more-btn')">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>CarbonESpace</h4>
+                    <p>The world's largest carbon project database. This website offers certified and non-certified carbon projects and their details.</p>
+                    <a href="https://web.carbonespace.com/home" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>NPT Automation Tool</h4>
+                    <p>Streamline and automate various processes within the communication sector, optimizing efficiency and productivity. </p>
+                    <a href="https://npt.amerck.com/source-upload" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>heart2heart Trust Fund</h4>
+                    <p>The Heart To Heart Trust Fund is a beacon of hope for financially impoverished heart patients across the Sri Lanka. </p>
+                    <a href="https://heart2hearttrust.org/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Annid International Website</h4>
+                    <p>AnniD International (PVT) LTD stands as a distinguished global solutions integrator, built on robust pillars.</p>
+                    <a href="https://annid.international/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Xplora Maintenance</h4>
+                    <p>Strategically designed to address the specific challenges encountered in the upkeep of data mining sector.</p>
+                    <a href="https://staging_xplora_maintenance.amerck.com/account/login"  target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>XBMW Wbsite</h4>
+                    <p>This is a operation maintain modeule for the BMW vehicle service center. </p>
+                    <a header="under maintaince"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards section design -->
+    <section class="awards" id="awards">
+    <h2 class="heading"><span>Awards </span>& <span>Certificates</span></h2>
+    <div class="award-container">
+        <div class="award-box award-layer">
+            <img src="images/bperform.jpg" alt="" class="award-img">
+            <div class="award-text ">
+                <h4>Best Performance Award (2022)</h4>
+                <p> I have been honored with the Best Performance Award for my outstanding achievement in BSc. Eng. (Hons) in Computer Systems Engineering at NSBM Green University, Sri Lanka, in 2022. </p>
+                <a href="https://www.facebook.com/nsbm.lk/posts/pfbid02r5mnhoGhMhnfdmhmRgYUowWr7Vyw3jj345L1mWJrVxrWRp1jeyteyyoc51nLyRVnl" target="_blank" class="social-icon" style="font-size: 20px;"><i class='bx bxl-facebook'></i></a>
+                <a href="https://lnkd.in/gGzQMWDD" target="_blank" class="social-icon" style="font-size: 20px;"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <div class="award-box award-layer">
+            <img src="images/aws_academy.png" alt="" class="award-img">
+            <div class="award-text ">
+                <h4>AWS Academy Cloud Foundations</h4>
+                <p>I have successfully completed the AWS Academy Cloud Foundations course issued by Amazon Web Services Training and Certification in 2022.</p>
+                <a href="https://www.credly.com/badges/cb7ade8b-eccf-4e58-b2d7-9d7756d286b7/public_url" target="_blank" class="social-icon" style="font-size: 20px;"><i class='bx bx-certification'></i></a>
+                <a href="https://www.credly.com/earner/earned/share/cb7ade8b-eccf-4e58-b2d7-9d7756d286b7" target="_blank" class="social-icon" style="font-size: 20px;"><i class='bx bx-badge-check'></i></a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+    
+
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <div style="padding: 0 30vw;">
+            <div>
+                <div class="social-media-contact">
+                    <a href="https://www.facebook.com/anushka.sandeepa.75" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <div class="text-contact">
+                        <a href="https://www.facebook.com/anushka.sandeepa.75" target="_blank">Anushka Sandeepa</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="social-media-contact">
+                    <a href="https://www.instagram.com/anushka_sandeepa7/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <div class="text-contact">
+                        <a href="https://www.instagram.com/anushka_sandeepa7/" target="_blank">anushka_sandeepa7</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="social-media-contact">
+                    <a href="https://www.linkedin.com/in/dmasandeepa/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <div class="text-contact">
+                        <a href="https://www.linkedin.com/in/dmasandeepa/" target="_blank">Anushka Sandeepa</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="social-media-contact">
+                    <a href="mailto:anushkasandeepa111@gmail.com"><i class='bx bx-mail-send'></i></a>
+                    <div class="text-contact">
+                        <a href="mailto:anushkasandeepa111@gmail.com">anushkasandeepa111@gmail.com</a>
+                    </div>
+                </div>
+            </div>            
+            <div>
+                <div class="social-media-contact">
+                    <a href="tel:+61452537745"><i class='bx bx-phone-call'></i></a>
+                    <div class="text-contact">
+                        <a href="tel:+61452537745">+61 452 537 745</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Anushka Sandeepa | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
