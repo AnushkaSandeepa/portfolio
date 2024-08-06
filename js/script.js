@@ -53,10 +53,10 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Software Engineer', 'Data Scientist'],
+    strings: ['Development Engineer', 'Data Scientist'],
     typeSpeed: 100,
     backSpeed: 40,
-    backDelay: 1000,
+    backDelay: 1700,
     loop: true
 });
 
