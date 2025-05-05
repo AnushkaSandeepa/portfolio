@@ -293,11 +293,14 @@ span {
     margin: 1rem 0 3rem;
 }
 
-#web-description,  #graphic-description {
+#web-description,  #graphic-description, #data-description {
     overflow: hidden;
-    height: 10vh; 
+    height: 14.5vh; 
     transition: height 0.3s;
 }
+
+
+
 
 .portfolio {
     background: var(--second-bg-color);
