@@ -98,5 +98,33 @@ $(document).ready(function(){
     });
 });
 
+(function(){
+  const link = document.getElementById('alike-pdf-link');
+  const modal = document.getElementById('pdf-modal');
+  const frame = document.getElementById('pdf-frame');
+  const closeBtn = document.getElementById('pdf-close');
+
+  if (!link || !modal || !frame || !closeBtn) return;
+
+  link.addEventListener('click', (e) => {
+    // keep default href as fallback if JS blocked
+    e.preventDefault();
+    frame.src = link.getAttribute('href') + '#toolbar=1&navpanes=0&view=FitH';
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    // trap focus
+    closeBtn.focus();
+  });
+
+  const close = () => {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    frame.src = ''; // release PDF from memory
+  };
+
+  closeBtn.addEventListener('click', close);
+  modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+})();
 
 

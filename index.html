@@ -49,8 +49,8 @@
 
                 Currently, I am pursuing a Master’s in Data Science, where I explore the transformative power of machine learning, data analytics, and AI-driven systems. My academic and project experiences reflect a commitment to solving complex problems using both code and data-bridging the gap between development and intelligent decision-making.</p>
             <div class="social-media">
-                <a href="https://www.facebook.com/anushka.sandeepa.75" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/anushka_sandeepa7/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <!-- <a href="https://www.facebook.com/anushka.sandeepa.75" target="_blank"><i class='bx bxl-facebook'></i></a> -->
+                <!-- <a href="https://www.instagram.com/anushka_sandeepa7/" target="_blank"><i class='bx bxl-instagram-alt'></i></a> -->
                 <a href="https://www.linkedin.com/in/dmasandeepa/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 <!-- <a href="https://gitlab.com/dmasandeepa98" target="_blank"><i class='bx bxl-gitlab'></i></a> -->
                 <a href="https://github.com/AnushkaSandeepa" target="_blank"><i class='bx bxl-github'></i></a>
@@ -114,6 +114,27 @@
         <h2 class="heading">Latest <span>Project</span></h2>
 
         <div class="portfolio-container">
+           <div class="portfolio-box">
+                <img src="images/ocengenom.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Ocean Genome Explorer</h4>
+                    <p>R Shiny web app integrating WoRMS, OBIS, NCBI & FishBase to explore marine taxa and genomes.</p>
+                    <a href="https://dmasandeepa-marine-genome-visualizer.share.connect.posit.cloud/"  target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/alikeanalyytica.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Alike Analytica (Desktop)</h4>
+                    <p>Electron + React desktop app automating evaluation reports, social media evaluations and dashboards.</p>
+                    <a id="alike-pdf-link" href="files/Alike_Analytica_User_Manual.pdf" title="View PDF">
+                        <i class='bx bx-link-external'></i>
+                    </a>
+
+                </div>
+            </div>
+            
             <div class="portfolio-box">
                 <img src="images/portfolio1.jpg" alt="">
                 <div class="portfolio-layer">
@@ -167,6 +188,10 @@
                     <a header="under maintaince"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+
+           
+
+
         </div>
     </section>
 
@@ -258,6 +283,12 @@
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
+
+    <!-- pdf vivwer modal -->
+    <div id="pdf-modal" class="pdf-modal" aria-hidden="true" role="dialog" aria-label="PDF viewer">
+        <button id="pdf-close" class="pdf-close" aria-label="Close">&times;</button>
+        <iframe id="pdf-frame" src="" loading="lazy"></iframe>
+    </div>
 
 
     <!-- scroll reveal -->
