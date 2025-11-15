@@ -384,13 +384,12 @@ span {
 
 .award-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 0 25rem;
+    gap: 0 5rem;
     padding: 50px;
     width: 100%;
-    /* max-width: 1000px; */
 }
 .award-container .award-box {
     border-radius: 2rem;
