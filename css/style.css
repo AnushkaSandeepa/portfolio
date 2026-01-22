@@ -382,15 +382,30 @@ span {
     color: var(--second-bg-color);
 }
 
-.award-container {
+.award-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 0 5rem;
+    justify-items: center;
+
+    gap: 3rem 5rem;   /* ✅ row-gap 3rem, column-gap 5rem */
+
     padding: 50px;
     width: 100%;
 }
+
+
+
+/* Center Outstanding Performance card in the second row (desktop view) */
+@media (min-width: 880px) {
+    .award-center-card{
+        grid-column: 2 / 3;  /* ✅ place it in the middle column */
+    }
+}
+
+
+
 .award-container .award-box {
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -646,3 +661,125 @@ span {
 .pdf-modal iframe{width:90vw;height:90vh;border:0;background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .pdf-close{position:absolute;top:1rem;right:1rem;font-size:2rem;line-height:1;background:#fff;border:0;border-radius:12px;padding:.25rem .6rem;cursor:pointer}
 @media (max-width:768px){.pdf-modal iframe{width:95vw;height:80vh}}
+
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 0 5rem;
+    padding: 50px;
+    width: 70%;
+}
+.education-container .award-box {
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    background: var(--second-bg-color);
+    width: 100%;
+    max-width: 1000px;
+}
+
+.education-container .social-icon{
+    color: var(--text-color);
+    size: 35px;
+    padding: 0 10px;
+}
+
+.social-icon:hover {
+    color: var(--main-color);
+}
+
+.education-container .award-img {
+    width: 100%;
+    padding: 20px;
+}
+
+.education-container .award-text {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+}
+
+.education{
+    min-height: 100vh;              
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       
+    align-items: center;            
+}
+
+/* Keep heading centered */
+.education .heading{
+    width: 100%;
+    text-align: center;
+}
+
+/* Grid centered */
+.education-grid{
+    width: 100%;
+    max-width: 1000px;              /* controls total width */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+
+    justify-content: center;        
+    justify-items: center;         
+    align-items: center;            
+}
+
+.edu-card{
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.edu-card:hover{
+    transform: translateY(-6px);
+}
+
+.edu-img img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.edu-content{
+    padding: 18px;
+}
+
+.edu-content h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.edu-place{
+    font-size: 14px;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.edu-time{
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 6px;
+}
+
+.edu-extra{
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Mobile: 1 card per row */
+@media (max-width: 879px) {
+    .education-grid{
+        grid-template-columns: 1fr;
+        max-width: 520px;
+        gap: 3rem;
+    }
+}
